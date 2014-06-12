@@ -7,6 +7,6 @@ ADD ./opkg-install      /usr/bin/opkg-install
 RUN opkg-cl install http://downloads.openwrt.org/snapshots/trunk/x86_64/packages/libgcc_4.8-linaro-1_x86_64.ipk
 RUN opkg-cl install http://downloads.openwrt.org/snapshots/trunk/x86_64/packages/libc_0.9.33.2-1_x86_64.ipk
 
-RUN ./usr/bin/opkg-install bash socat
+RUN ./usr/bin/opkg-install bash socat dnsmasq
 
 CMD ["/bin/bash"]
